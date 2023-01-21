@@ -1,0 +1,19 @@
+@use "../abstract/variables" as var;
+
+#breadcrumb {
+    margin-top: 70px;
+    margin-bottom: 0;
+    ol {
+      li {
+        a {
+          color: #b0b0b0;
+        }
+      }
+      li.active {
+        color: var.$primary-color !important;
+      }
+    }
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: "|" !important;
+  }

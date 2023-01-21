@@ -1,0 +1,32 @@
+@use "../abstract/variables" as var;
+.about {
+  margin-top: 109px;
+  padding: 50px 0;
+  &__title {
+    font-family: CeraRoundPro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 130%;
+    text-align: right;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    font-feature-settings: "tnum" on, "lnum" on;
+    color: var.$text-color; 
+    margin-bottom: 8px;
+}
+img{
+    margin-bottom: 30px;
+}
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    color: var.$text-color;
+    opacity: 0.8;
+    max-width: 720px;
+    margin-bottom: 30px;
+  }
+}

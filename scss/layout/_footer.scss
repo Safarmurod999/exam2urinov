@@ -52,6 +52,7 @@
     }
     .form-div {
       justify-content: space-between;
+      z-index: 2;
       input {
         max-width: 78%;
         color: var.$secondary-color;

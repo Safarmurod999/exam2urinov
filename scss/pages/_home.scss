@@ -427,11 +427,27 @@
       width: 301px;
       height: 447px;
       border-radius: 14px;
-      img {
+      .background {
         width: 100%;
         height: 100%;
         border-radius: 14px;
       }
+      .insta-layer{
+        display: none;
+        transition: .5s;
+      }
+      
+    }
+    .item-owl{
+      transition: .5s;
+    }
+    .item-owl:hover{
+        .insta-layer{
+          position: absolute;
+          top: 0;
+          left:0;
+          display: block;
+        }       
     }
   }
 }
