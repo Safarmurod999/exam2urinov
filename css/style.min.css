@@ -1,0 +1,20 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background-color: rgba(0, 0, 0, 0);
+}
+.container {
+  max-width: 1324px !important;
+}

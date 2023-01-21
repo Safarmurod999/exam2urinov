@@ -1,0 +1,48 @@
+@use "../abstract/variables" as var;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style-type: none;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+
+    background-color: transparent;
+}
+
+.container{
+    max-width: 1324px !important;
+}
+
+
+#backtop {
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var.$primary-color;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  #backtop img {
+    width: 30px;
+    height: 30px;
+  }
