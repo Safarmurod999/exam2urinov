@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+main {
+  margin-top: 109px;
+}
+
 button {
   cursor: pointer;
   background-color: transparent;
@@ -76,15 +80,6 @@ button {
 .offcanvas.show .navbar-nav .nav-link {
   margin: 20px 0;
   font-size: 30px;
-}
-
-.navbar-expand-lg .offcanvas .offcanvas-body {
-  height: 48px;
-}
-
-.navbar-expand-lg .navbar-nav {
-  margin: 0 !important;
-  height: 48px;
 }
 
 .navbar-nav .nav-link {
