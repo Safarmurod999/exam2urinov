@@ -1,4 +1,5 @@
 @use "../abstract/variables" as var;
+@use "../abstract/mixins" as mixin;
 .footer {
   padding-top: 342px;
   background-color: #ffffff;
@@ -78,10 +79,9 @@
     color: var.$secondary-color;
     &-left,&-right {
     text-align: center;
-      display: flex;
+@include mixin.flex-box(center,center);
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+
       h3 {
         font-style: normal;
         font-weight: 400;
@@ -102,10 +102,9 @@
       }
     }
     &-middle {
-      display: flex;
+      @include mixin.flex-box(center,center);
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+
       p {
         margin: 32px 0 45px;
         font-style: normal;

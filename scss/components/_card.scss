@@ -1,0 +1,31 @@
+@use "../abstract/variables" as var;
+@use "../abstract/mixins" as mixin;
+
+.popular{
+    .card {
+        padding: 20px 20px 40px 20px;
+        border-radius: 14px;
+        &__text {
+          p {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            color: var.$text-color;
+            margin: 10px 0 20px;
+          }
+          img {
+            width: auto;
+            margin-bottom: 20px;
+          }
+          h4 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            color: var.$primary-color;
+          }
+        }
+      }
+}

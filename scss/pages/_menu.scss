@@ -1,4 +1,5 @@
 @use "../abstract/variables" as var;
+@use "../abstract/mixins" as mixin;
 .menu {
   margin-top: 109px;
   .breadcrumb {
@@ -43,10 +44,9 @@
     border-radius: 20px;
     margin-top: 55px;
     #metro-tab {
-      display: flex;
+      @include mixin.flex-box(center,start);
       flex-direction: column;
-      align-items: start;
-      justify-content: center;
+
       background-color: var.$primary-color;
       border: none;
       li {

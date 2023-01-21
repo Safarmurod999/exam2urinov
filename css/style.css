@@ -190,9 +190,9 @@ button {
 .footer-nav-left, .footer-nav-right {
   text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .footer-nav-left h3, .footer-nav-right h3 {
   font-style: normal;
@@ -214,9 +214,9 @@ button {
 }
 .footer-nav-middle {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .footer-nav-middle p {
   margin: 32px 0 45px;
@@ -236,7 +236,33 @@ button {
     padding: 64px 277px;
   }
 }
+.popular .card {
+  padding: 20px 20px 40px 20px;
+  border-radius: 14px;
+}
+.popular .card__text p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #242424;
+  margin: 10px 0 20px;
+}
+.popular .card__text img {
+  width: auto;
+  margin-bottom: 20px;
+}
+.popular .card__text h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #BB2339;
+}
+
 .home {
+  padding: 50px 0;
   background-color: #BB2339;
 }
 .home__suptitle {
@@ -387,9 +413,9 @@ button {
 .regular #metro-tab {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 .regular #metro-tab a {
@@ -585,8 +611,8 @@ button {
 .video .container-fluid {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   max-height: 763px;
 }
 .video .modal-body #video {
@@ -776,9 +802,9 @@ button {
 }
 .menu .tab-list #metro-tab {
   display: flex;
-  flex-direction: column;
-  align-items: start;
   justify-content: center;
+  align-items: start;
+  flex-direction: column;
   background-color: #BB2339;
   border: none;
 }
@@ -805,7 +831,7 @@ button {
   }
 }
 #breadcrumb {
-  margin-top: 70px;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 #breadcrumb ol li a {
@@ -853,8 +879,8 @@ button {
   border-radius: 50%;
   margin-right: 25px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .contact__card h3 {
   font-style: normal;

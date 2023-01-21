@@ -1,6 +1,9 @@
 @use "../abstract/variables" as var;
+@use "../abstract/mixins" as mixin;
 
+@use "../components/card";
 .home {
+  padding: 50px 0;
   background-color: var.$primary-color;
   &__suptitle {
     font-style: normal;
@@ -151,10 +154,9 @@
   }
   #metro-tab {
     width: 100%;
-    display: flex;
+    @include mixin.flex-box(space-between,center);
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+
     flex-wrap: wrap;
     a {
       padding: 0 !important;
@@ -350,9 +352,7 @@
   margin-bottom: 50px;
   .container-fluid {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include mixin.flex-box(center,center);
     max-height: 763px;
   }
   .modal {
