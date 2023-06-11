@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eat Turkish</title>
     <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <link href="assets/lib/unicons/css/unicons.css" rel="stylesheet" />
-    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
@@ -29,23 +24,25 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <nav
-      id="navbar-responsive" class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+        id="navbar-responsive"
+        class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
         w3-include-html="nav.html"
       ></nav>
     </header>
     <button id="backtop">
-        <a href="#"><img src="images/backtop.svg" alt="backtop" /></a>
-      </button>
+      <a href="#"><img src="images/backtop.svg" alt="backtop" /></a>
+    </button>
     <main>
       <section class="home">
         <div class="container d-lg-flex flex-row justify-content-between">
@@ -714,10 +711,12 @@
         </div>
       </section>
       <section class="gallery">
-        <div class="container d-flex flex-row flex-wrap justify-content-between">
+        <div
+          class="container d-flex flex-row flex-wrap justify-content-between"
+        >
           <div class="gallery__left text-sm-center text-lg-start">
             <h5 class="gallery__suptitle">Instagram</h5>
-            <img src="images/home/spoon.svg" alt="">
+            <img src="images/home/spoon.svg" alt="" />
             <h1 class="gallery__title">Photo Gallery</h1>
             <p class="gallery__text mx-sm-auto mx-lg-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
@@ -726,37 +725,53 @@
             <a href="#" class="gallery__btn">View More</a>
           </div>
           <div class="gallery__right">
-            <div class="owl-carousel owl-theme gallery-carousel ">
+            <div class="owl-carousel owl-theme gallery-carousel">
               <div class="item">
                 <div class="item-owl">
-                  <img class="background" src="images/home/gallery-1.svg" alt="gallery">
-                <div class="insta-layer">
-                  <img src="images/footer/gallery-hover.svg" alt="gallery">
-                </div>
+                  <img
+                    class="background"
+                    src="images/home/gallery-1.svg"
+                    alt="gallery"
+                  />
+                  <div class="insta-layer">
+                    <img src="images/footer/gallery-hover.svg" alt="gallery" />
+                  </div>
                 </div>
               </div>
               <div class="item">
                 <div class="item-owl">
-                  <img class="background" src="images/home/gallery-3.svg" alt="gallery">
-                <div class="insta-layer">
-                  <img src="images/footer/gallery-hover.svg" alt="gallery">
-                </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="item-owl">
-                  <img class="background" src="images/home/gallery-1.svg" alt="gallery">
-                <div class="insta-layer">
-                  <img src="images/footer/gallery-hover.svg" alt="gallery">
-                </div>
+                  <img
+                    class="background"
+                    src="images/home/gallery-3.svg"
+                    alt="gallery"
+                  />
+                  <div class="insta-layer">
+                    <img src="images/footer/gallery-hover.svg" alt="gallery" />
+                  </div>
                 </div>
               </div>
               <div class="item">
                 <div class="item-owl">
-                  <img class="background" src="images/home/gallery-3.svg" alt="gallery">
-                <div class="insta-layer">
-                  <img src="images/footer/gallery-hover.svg" alt="gallery">
+                  <img
+                    class="background"
+                    src="images/home/gallery-1.svg"
+                    alt="gallery"
+                  />
+                  <div class="insta-layer">
+                    <img src="images/footer/gallery-hover.svg" alt="gallery" />
+                  </div>
                 </div>
+              </div>
+              <div class="item">
+                <div class="item-owl">
+                  <img
+                    class="background"
+                    src="images/home/gallery-3.svg"
+                    alt="gallery"
+                  />
+                  <div class="insta-layer">
+                    <img src="images/footer/gallery-hover.svg" alt="gallery" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -784,9 +799,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script>
- $(".gallery-carousel").owlCarousel({
+      $(".gallery-carousel").owlCarousel({
         loop: true,
         margin: 15,
         nav: false,
@@ -806,7 +820,7 @@
           },
           1300: {
             items: 4,
-          }
+          },
         },
       });
 
