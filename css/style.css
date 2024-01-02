@@ -21,10 +21,6 @@ a {
   text-decoration: none;
 }
 
-main {
-  margin-top: 109px;
-}
-
 button {
   cursor: pointer;
   background-color: transparent;
@@ -709,7 +705,7 @@ button {
 }
 @media (min-width: 992px) {
   .home {
-    padding: 83px 0 237px;
+    padding: 192px 0 237px;
   }
   .home__suptitle {
     font-size: 23px;
@@ -738,25 +734,18 @@ button {
   .home__right img {
     height: 100%;
   }
-  .popular, .regular, .testimony, .updates, .video {
+  .popular,
+  .regular,
+  .testimony,
+  .updates,
+  .video {
     padding: 120px 0;
   }
-  .gallery {
-    padding: 120px 0;
+  .video {
+    padding-block: 0;
   }
-  .gallery .container {
-    margin-left: auto !important;
-    margin-right: 0;
-    width: auto !important;
-    flex-wrap: nowrap !important;
-    overflow: hidden;
-  }
-  .gallery .owl-carousel {
-    width: 1300px;
-  }
-  .gallery__left {
-    min-width: 491px;
-    margin-right: 64px;
+  .updates {
+    padding-bottom: 0;
   }
 }
 .menu {
@@ -796,15 +785,21 @@ button {
   max-width: 428px;
   padding: 50px 40px !important;
   background-color: #BB2339;
-  height: 844px;
+  max-height: 540px;
   border-radius: 20px;
   margin-top: 55px;
 }
+@media (max-width: 770px) {
+  .menu .tab-list {
+    max-width: 100%;
+  }
+}
 .menu .tab-list #metro-tab {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 10px;
   background-color: #BB2339;
   border: none;
 }
@@ -991,8 +986,7 @@ button {
   }
 }
 .about {
-  margin-top: 109px;
-  padding: 50px 0;
+  padding: 159px 0 0;
 }
 .about__title {
   font-family: CeraRoundPro;

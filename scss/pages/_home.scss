@@ -154,7 +154,7 @@
   }
   #metro-tab {
     width: 100%;
-    @include mixin.flex-box(space-between,center);
+    @include mixin.flex-box(space-between, center);
     flex-direction: row;
 
     flex-wrap: wrap;
@@ -352,7 +352,7 @@
   margin-bottom: 50px;
   .container-fluid {
     position: relative;
-    @include mixin.flex-box(center,center);
+    @include mixin.flex-box(center, center);
     max-height: 763px;
   }
   .modal {
@@ -373,7 +373,7 @@
 .gallery {
   padding: 50px 0;
   background-color: #f4f4f4;
-  .container{
+  .container {
     overflow: hidden;
     align-items: center;
   }
@@ -432,36 +432,35 @@
         height: 100%;
         border-radius: 14px;
       }
-      .insta-layer{
+      .insta-layer {
         display: none;
-        transition: .5s;
+        transition: 0.5s;
       }
-      
     }
-    .item-owl{
-      transition: .5s;
+    .item-owl {
+      transition: 0.5s;
     }
-    .item-owl:hover{
-        .insta-layer{
-          position: absolute;
-          top: 0;
-          left:0;
-          display: block;
-        }       
+    .item-owl:hover {
+      .insta-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+      }
     }
   }
 }
 
-@media (max-width:992px){
-  .gallery{
-    &__left{
+@media (max-width: 992px) {
+  .gallery {
+    &__left {
       width: 100%;
     }
   }
 }
 @media (min-width: 992px) {
   .home {
-    padding: 83px 0 237px;
+    padding: 192px 0 237px;
     &__suptitle {
       font-size: 23px;
       line-height: 130%;
@@ -491,26 +490,17 @@
       }
     }
   }
-  .popular,.regular,.testimony,.updates,.video {
+  .popular,
+  .regular,
+  .testimony,
+  .updates,
+  .video {
     padding: 120px 0;
   }
-
-  .gallery {
-    padding: 120px 0;
-    .container {
-      margin-left: auto!important;
-      margin-right: 0;
-      width: auto !important;
-      flex-wrap: nowrap !important;
-      overflow: hidden;
-    }
-    .owl-carousel {
-      width: 1300px;
-    }
-    &__left {
-
-      min-width: 491px;
-      margin-right: 64px;
-    }
+  .video {
+    padding-block: 0;
+  }
+  .updates{
+    padding-bottom: 0;
   }
 }
